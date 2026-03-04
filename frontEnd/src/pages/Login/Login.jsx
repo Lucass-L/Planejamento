@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import styles from './Login.module.css'
+import { useState } from 'react';
+import styles from './Login.module.css';
+import {useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-    const [email, setEmail] = useState('')
-    const [senha, setSenha] = useState('')
-    const [error, setError] = useState('')
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [error, setError] = useState('');
+
+    const navigate = useNavigate();
 
     const handlesubmit = async (e) =>{
         e.preventDefault();
 
-        alert(`Usuário: ${email} \n Senha: ${senha}`)
+        alert(`Usuário: ${email} \n Senha: ${senha}`);
+        //chamar dashboard para um teste visual!
+        navigate('/dashboard');
+
+        //
 
         //Chamar o context para verificar se o usuario existe e tem permissao, usando await!
     }
@@ -24,7 +31,7 @@ const Login = () => {
                 </h2>
                 <div className={styles.groupFormMargin}>
                         <div className={styles.inputGroup}>
-                        <label htmlFor="username-input" className={styles.label}>
+                        <label htmlFor="email-input" className={styles.label}>
                             Usuário
                         </label>
                         <input 
@@ -56,4 +63,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Login;

@@ -1,14 +1,15 @@
-import './App.css'
-import Login from './pages/Login/Login.jsx'
+import './App.css';
+import AppRoutes from './routes/AppRoutes.jsx';
+
 
 
 const App = () => {
   
   return (
     <>
-      <Login/>
+      <AppRoutes/>
     </>
   )
 }
 
-export default App
+export default App;
