@@ -7,4 +7,6 @@
     --font-rubik: 'Rubik', sans-serif;
     --branco-neve : #eaeaf1;
     --cinza-fraco: #666060;
+    --degrade-rs: linear-gradient(90deg,rgb(27, 153, 75) 0%, rgba(255, 40, 33, 1) 43%, rgb(241, 219, 46) 100%)
+    
 }

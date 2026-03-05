@@ -16,8 +16,6 @@ const Sidebar = () => {
 
     return(
     <aside className={styles.side}>
-        <h2 className={styles.title}>Planejamento</h2>
-        <div className={styles.linhaDiv}/>
         <div className={styles.containerNav}>
             <ul className={styles.List}>
                 {itensNavegacao.map((item) => {
@@ -28,7 +26,7 @@ const Sidebar = () => {
                          <NavLink 
                             to={pathCompleto}
                             end={item.path === '/dashboard'}
-                            className={({isActive}) =>  `${styles.linkContent} ${isActive ? styles.pathAtivo : styles.pathInativo}` }
+                            className={({isActive}) =>  `${styles.linkContent} ${isActive ? styles.pathAtivo :''}` }
                         >
                                 <Icon className={styles.icon}/>
                                 <span className={styles.label}>{item.label}</span>
