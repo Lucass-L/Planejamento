@@ -11,7 +11,7 @@ const Sidebar = () => {
         {label: 'Turmas', Icon: Users, path: '/turmas'},
         {label: 'Professores', Icon: UserCircle, path: '/professores'},
         {label: 'Transferência', Icon: ArrowLeftRight, path: '/transferencia'},
-        {label: 'Configurações', Icon: Settings, path: '/configuracoes'}
+        {label: 'Configurações', Icon: Settings, path: '/configuracao'}
     ]
 
     return(
@@ -25,7 +25,7 @@ const Sidebar = () => {
                         <li className={styles.itemLista} key={item.path}>
                          <NavLink 
                             to={pathCompleto}
-                            end={item.path === '/dashboard'}
+                            end={item.path === ''}
                             className={({isActive}) =>  `${styles.linkContent} ${isActive ? styles.pathAtivo :''}` }
                         >
                                 <Icon className={styles.icon}/>

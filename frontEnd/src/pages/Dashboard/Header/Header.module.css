@@ -10,3 +10,8 @@
     margin-left: 100px; 
     }
 }
+
+.paragrafo, .title{
+    font-family: var(--font-rubik);
+    font-weight: 500;
+}
