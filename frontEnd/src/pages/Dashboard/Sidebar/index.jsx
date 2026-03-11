@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Sidebar.module.css';
-import { Home, Users, UserCircle, ArrowLeftRight, Settings } from 'lucide-react';
+import { Home, Users, UserCircle, ArrowLeftRight, Settings, Bell } from 'lucide-react';
 
 
 
@@ -8,6 +8,7 @@ const Sidebar = () => {
 
     const itensNavegacao = [
         {label: 'Início', Icon: Home, path: ''},
+        {label: 'Requisições', Icon: Bell, path: '/requisicoes'},
         {label: 'Turmas', Icon: Users, path: '/turmas'},
         {label: 'Professores', Icon: UserCircle, path: '/professores'},
         {label: 'Transferência', Icon: ArrowLeftRight, path: '/transferencia'},

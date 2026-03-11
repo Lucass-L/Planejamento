@@ -4,8 +4,7 @@
     background: var(--degrade-rs);
     padding: 15px;
     color:  var(--branco-neve);
-
-
+    
     & div{
     margin-left: 100px; 
     }

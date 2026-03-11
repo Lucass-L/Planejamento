@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import styles from './Dashboard.module.css';
-import Header from './Header/Header.jsx';
-import Sidebar from './Sidebar/Sidebar.jsx';
+import Header from './Header';
+import Sidebar from './Sidebar';
 
 
 const Dashboard = () => {

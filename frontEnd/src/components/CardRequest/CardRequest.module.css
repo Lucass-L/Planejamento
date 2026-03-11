@@ -1,0 +1,40 @@
+.cardRequest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 550px;
+    border-radius: 12px;
+    padding: 3px 15px;
+    background: linear-gradient(90deg,rgb(242, 248, 250) 0%, rgb(224, 238, 245) 100%);
+    cursor: pointer;
+    transition: transform  0.3s ease-in-out;
+
+    &:hover{
+        transform: translateY(-6px);
+    }
+}
+
+.iconeTask{
+    width: 35px;
+    height: 30px;
+}
+
+.componentes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.textoPrincipal{
+    font-size: 20px
+}
+
+.textoData{
+    font-size: 14px
+}
+
+.textoTurma{
+    font-size: 25px;
+    padding-right: 10px;
+}
