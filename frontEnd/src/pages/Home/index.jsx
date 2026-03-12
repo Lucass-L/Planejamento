@@ -26,12 +26,13 @@ const Home = () => {
         <div className={styles.containerInput}>
             <Search className={styles.icon}/>
             <input className={styles.inputSearch} type='text' placeholder='Nome do Professor'/>
-            <select className={styles.containerFiltro} name='Status'>
-                <option disabled selected hidden>Status</option>
-                <option >Atrasado</option>
-                <option>Pendente</option>
-                <option>Aprovado</option>
+            <select defaultValue="Status" className={styles.containerFiltro} name="Status">
+                <option value="Status" disabled>Status</option>
+                <option value="Atrasado">Atrasado</option>
+                <option value="Pendente">Pendente</option>
+                <option value="Aprovado">Aprovado</option>
             </select>
+
         </div>
 
         <div className={styles.containerCards}>
@@ -47,6 +48,7 @@ const Home = () => {
                 <div className={styles.containerCards}>
             {listaCardsExemplo.map((dado) => 
             <CardRequest 
+         
             professor={dado.professor}
             materia={dado.materia}
             data={dado.data}

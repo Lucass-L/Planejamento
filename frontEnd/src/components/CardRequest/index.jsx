@@ -1,9 +1,9 @@
-import styles from './cardRequest.module.css';
+import styles from './CardRequest.module.css';
 import {ClipboardList} from 'lucide-react';
 
-const CardRequest = ({professor, materia, data, hora, turma}) => {
+const CardRequest = ({professor, materia, data, hora, turma, }) => {
     return(
-        <div className={styles.cardRequest}>
+        <div  className={styles.cardRequest}>
             <div className={styles.componentes}>
                     <ClipboardList className={styles.iconeTask}/>
                     <span className={styles.textos}>
