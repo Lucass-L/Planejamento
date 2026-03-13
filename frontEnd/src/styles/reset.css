@@ -11,7 +11,7 @@
 /* 3. Allow percentage-based heights in the application */
 html, body, #root {
   height: 100%;
-  overflow: hidden
+  overflow: scroll
 }
 
 /* 

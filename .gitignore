@@ -1,0 +1,12 @@
+# Logs e arquivos de execução
+*.log
+*.tmp
+/node_modules/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Configurações pessoais e segredos
+.env
+.vscode/
