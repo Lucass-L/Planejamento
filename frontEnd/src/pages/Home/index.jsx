@@ -12,7 +12,7 @@ const Home = () => {
     useEffect (() => {
         const buscarDados = async () => {
     try {
-      const resposta = await fetch('http://localhost:3001/aulas');
+      const resposta = await fetch('https://json-server-bkl2.onrender.com/aulas');
       const dados = await resposta.json();
       setListaCardsExemplos(dados);
     } catch (error) {
