@@ -9,6 +9,20 @@
     background: linear-gradient(90deg,rgb(242, 248, 250) 0%, rgb(224, 238, 245) 100%);
     cursor: pointer;
     transition: transform  0.3s ease-in-out;
+    
+        /* Teste do efeito vidro em background */
+
+      /* Fundo branco transparente */
+  background: rgba(193, 237, 253, 0.2);
+  /* Efeito de desfoque */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Suporte Safari */
+  /* Borda sutil */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  /* Sombra para profundidade */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
 
     &:hover{
         transform: translateY(-6px);

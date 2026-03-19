@@ -55,7 +55,7 @@ const Home = () => {
                 <option value="Status" disabled>Status</option>
                 <option value="Atrasado">Atrasado</option>
                 <option value="Pendente">Pendente</option>
-                <option value="Aprovado">Aprovado</option>
+                <option value="Aprovado">Enviado</option>
             </select>
 
         </div>
