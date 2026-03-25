@@ -1,5 +1,24 @@
 .containerCards{
+    margin-top: 20px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
+
+.containerOptions{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+
+    & > label{
+        font-size: 18px;
+    }
+}
+
+.opnFilter{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    background-color: transparent;
+}
+

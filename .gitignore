@@ -1,12 +1,26 @@
-# Logs e arquivos de execução
-*.log
-*.tmp
-/node_modules/
+# Dependências
+node_modules/
+**/node_modules/
 
-# Arquivos de sistema
+# Build
+dist/
+dist-ssr/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Ambiente
+.env
+*.local
+
+# Sistema
 .DS_Store
 Thumbs.db
 
-# Configurações pessoais e segredos
-.env
+# Editor
 .vscode/
+!.vscode/extensions.json
+.idea

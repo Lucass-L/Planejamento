@@ -1,9 +1,20 @@
 import styles from './CardTurma.module.css'
+import {Users,CircleUser} from 'lucide-react'
 
-const CardTurma = () => {
+const CardTurma = ({turma, regente}) => {
     return(
-    <div className={styles.cardContainer} >
-        <h5 className={styles.nameTurma}>TURMA 103</h5>
+    <div className={styles.cardContainer}>
+        <div className={styles.cardHeader}>
+            <h3 className={styles.nameTurma}>Turma {turma}</h3> 
+            <span className={styles.iconUsers}> <Users color='white'/> </span>
+        </div>
+        <div className={styles.cardFooter}>
+                <span>
+                <CircleUser color='#F1D32D'/>   
+                <p className={styles.paragrafoRegente}>Professor Regente:</p>
+                </span>
+                <p className={styles.paragrafoRegente}><strong>{regente}</strong></p>
+        </div>
     </div>
     )
 }
