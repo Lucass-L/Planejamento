@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import CardTurma from '../../components/CardTurma'
 import styles from './Turmas.module.css'
+import { ModalTurma } from './ModalTurma';
 
 const TURMAS_DATA = [
   { id: 1, turma: "101", professor: "Ricardo Oliveira" },
@@ -17,11 +18,12 @@ const TURMAS_DATA = [
 
 const Turmas = () => {
 
-
+    const [turmaEditando, setTurmaEditando] = useState(null)
     const [busca, setBusca] = useState('')
     const [turmas, setTurmas] = useState(TURMAS_DATA)
 
-
+    
+    
 
     return(
         <>
@@ -31,14 +33,20 @@ const Turmas = () => {
             <input className={styles.opnFilter} placeholder='Ex: 103' id='input-filter' type='text'/>
         </div>
         <section className={styles.containerCards}>
-            <CardTurma turma={'103'} regente={'Marina'}/>
-            <CardTurma turma={'104'} regente={'Flávio'}/>
-            <CardTurma turma={'203'} regente={'Mario'}/>
-            <CardTurma turma={'105'} regente={'Marcelo'}/>
-            <CardTurma turma={'303'} regente={'Itaci'}/>
-            <CardTurma turma={'201'} regente={'Keli'}/>
-            <CardTurma turma={'302'} regente={'Jéssica'}/>
-            <CardTurma turma={'202'} regente={'Ana'}/>
+            {TURMAS_DATA.map((lineTurma) => (
+                <CardTurma 
+                key={lineTurma.id}
+                turma={lineTurma.turma} 
+                regente={lineTurma.professor}
+                onClick={() => setTurmaEditando(lineTurma)}
+                />
+            ))}
+            
+            {turmaEditando && (
+                <ModalTurma
+                    turma={turmaEditando}
+                    onClose={() => setTurmaEditando(null)}
+                />)}
         </section>
         </>
     )

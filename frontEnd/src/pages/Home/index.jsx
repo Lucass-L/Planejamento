@@ -30,7 +30,6 @@ const Home = () => {
 
     const handleChange = (event) =>{
         setNomeBusca(event.target.value);
-        console.log(nome);
     }
 
     const listaDeItensFiltrados = listaCardsExemplo.filter((item) => item.professor.toLowerCase().includes(nomeBusca.toLowerCase()));
